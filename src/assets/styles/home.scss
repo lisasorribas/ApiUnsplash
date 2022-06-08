@@ -33,8 +33,16 @@ main {
     padding: 0 5rem 5rem 5rem;
     gap: 5rem;
 
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
     &-img, &-content {
       width: 50%;
+
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
     }
 
     &-img {
@@ -118,6 +126,7 @@ main {
 
     .ctas {
       display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
       margin-bottom: 0;
       margin-top: auto;
@@ -129,4 +138,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+
+  &__search {
+    padding: 0 3rem;
+  }
 }

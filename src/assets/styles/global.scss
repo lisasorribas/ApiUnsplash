@@ -16,6 +16,11 @@ header, footer {
     justify-content: center;
     font-weight: 700;
     letter-spacing: 2rem;
+    text-align: center;
+
+    @media screen and (max-width: 800px) {
+      font-size: 3rem;
+    }
   }
 }
 

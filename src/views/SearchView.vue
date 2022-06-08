@@ -46,9 +46,11 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container search">
     <h2>Recherche</h2>
-    <search-bar @searchChanged='searchPhoto' :placeholder="$route.query.query" />
+    <section class="search__bar">
+      <search-bar @searchChanged='searchPhoto' :placeholder="$route.query.query" />
+    </section>
     <div v-if="results" class="results">
       <!-- Boucle for qui vient afficher chaque résultat indépendamment -->
       <div v-for="result in results" :key="result.id" class="result">
